@@ -1,0 +1,14 @@
+.rules {
+  background-color: rgb(0,200,0);
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+p {
+  color: black;
+  font-weight: 500;
+}
+
+.rule-text {
+  padding: 10px;
+}
