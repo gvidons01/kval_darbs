@@ -1,0 +1,9 @@
+h2 {
+  margin-bottom: 20px;
+}
+
+.faq-text {
+  background-color: rgb(0,200,0);
+  border: 2px solid black;
+  border-radius: 10px;
+}
