@@ -4,12 +4,14 @@ import { StartComponent } from './start/start.component';
 import { SearchComponent } from './search/search.component';
 import { RulesComponent } from './rules/rules.component';
 import { FaqComponent } from './faq/faq.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: 'start', component: StartComponent },
   { path: 'search', component: SearchComponent },
   { path: 'rules', component: RulesComponent },
-  { path: 'faq', component: FaqComponent },  
+  { path: 'faq', component: FaqComponent },
+  { path: 'contact', component: ContactComponent },  
   { path: '', redirectTo: '/start', pathMatch: 'full' }
 ];
 
