@@ -12,6 +12,18 @@ import { FooterComponent } from './footer/footer.component';
 import { RulesComponent } from './rules/rules.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { PropertyComponent } from './property/property.component';
+import { ElectronicsComponent } from './electronics/electronics.component';
+import { HomeComponent } from './home/home.component';
+import { ClothingComponent } from './clothing/clothing.component';
+import { KidsComponent } from './kids/kids.component';
+import { HobbyComponent } from './hobby/hobby.component';
+import { AgricultureComponent } from './agriculture/agriculture.component';
+import { GardenComponent } from './garden/garden.component';
+import { ConstructionComponent } from './construction/construction.component';
+import { ProductionComponent } from './production/production.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +34,19 @@ import { ContactComponent } from './contact/contact.component';
     FooterComponent,
     RulesComponent,
     FaqComponent,
-    ContactComponent
+    ContactComponent,
+    VehiclesComponent,
+    PropertyComponent,
+    ElectronicsComponent,
+    HomeComponent,
+    ClothingComponent,
+    KidsComponent,
+    HobbyComponent,
+    AgricultureComponent,
+    GardenComponent,
+    ConstructionComponent,
+    ProductionComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
