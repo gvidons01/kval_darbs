@@ -13,6 +13,10 @@ img {
   margin-right: auto;
 }
 
+button {
+  margin-right: 20px;
+}
+
 .row {
   display: flex;
   justify-content: space-between;
