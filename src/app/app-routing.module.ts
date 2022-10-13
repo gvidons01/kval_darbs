@@ -17,6 +17,8 @@ import { GardenComponent } from './garden/garden.component';
 import { ConstructionComponent } from './construction/construction.component';
 import { ProductionComponent } from './production/production.component';
 import { ServicesComponent } from './services/services.component';
+import { LoginComponent } from './login/login.component';
+import { AddListingComponent } from './add-listing/add-listing.component';
 
 const routes: Routes = [
   { path: 'start', component: StartComponent },
@@ -36,6 +38,8 @@ const routes: Routes = [
   { path: 'production', component: ProductionComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'new', component: AddListingComponent },
+  { path: 'login', component: LoginComponent },
   { path: '', redirectTo: '/start', pathMatch: 'full' },
   { path: '**', redirectTo: '/start', pathMatch: 'full' }
 ];

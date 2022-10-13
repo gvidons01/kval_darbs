@@ -24,6 +24,8 @@ import { GardenComponent } from './garden/garden.component';
 import { ConstructionComponent } from './construction/construction.component';
 import { ProductionComponent } from './production/production.component';
 import { ServicesComponent } from './services/services.component';
+import { LoginComponent } from './login/login.component';
+import { AddListingComponent } from './add-listing/add-listing.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { ServicesComponent } from './services/services.component';
     GardenComponent,
     ConstructionComponent,
     ProductionComponent,
-    ServicesComponent
+    ServicesComponent,
+    LoginComponent,
+    AddListingComponent
   ],
   imports: [
     BrowserModule,
