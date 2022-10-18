@@ -20,7 +20,6 @@ import { MotorcyclesComponent } from './motorcycles/motorcycles.component';
 import { MopedsComponent } from './mopeds/mopeds.component';
 import { BicyclesComponent } from './bicycles/bicycles.component';
 import { QuadbikesComponent } from './quadbikes/quadbikes.component';
-import { BuggiesComponent } from './buggies/buggies.component';
 import { GokartsComponent } from './gokarts/gokarts.component';
 import { BoatsComponent } from './boats/boats.component';
 import { TrailersComponent } from './trailers/trailers.component';
@@ -44,7 +43,6 @@ import { SparePartsComponent } from './spare-parts/spare-parts.component';
     MopedsComponent,
     BicyclesComponent,
     QuadbikesComponent,
-    BuggiesComponent,
     GokartsComponent,
     BoatsComponent,
     TrailersComponent,
@@ -53,7 +51,8 @@ import { SparePartsComponent } from './spare-parts/spare-parts.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

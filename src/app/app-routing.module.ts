@@ -13,7 +13,6 @@ import { MotorcyclesComponent } from './motorcycles/motorcycles.component';
 import { MopedsComponent } from './mopeds/mopeds.component';
 import { BicyclesComponent } from './bicycles/bicycles.component';
 import { QuadbikesComponent } from './quadbikes/quadbikes.component';
-import { BuggiesComponent } from './buggies/buggies.component';
 import { GokartsComponent } from './gokarts/gokarts.component';
 import { BoatsComponent } from './boats/boats.component';
 import { TrailersComponent } from './trailers/trailers.component';
@@ -33,7 +32,6 @@ const routes: Routes = [
   { path: 'mopeds', component: MopedsComponent },
   { path: 'bicycles', component: BicyclesComponent },
   { path: 'quadbikes', component: QuadbikesComponent },
-  { path: 'buggies', component: BuggiesComponent },
   { path: 'gokarts', component: GokartsComponent },
   { path: 'boats', component: BoatsComponent },
   { path: 'trailers', component: TrailersComponent },
