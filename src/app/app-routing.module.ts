@@ -5,6 +5,7 @@ import { SearchComponent } from './search/search.component';
 import { RulesComponent } from './rules/rules.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
+import { MyListingsComponent } from './my-listings/my-listings.component';
 import { LoginComponent } from './login/login.component';
 import { AddListingComponent } from './add-listing/add-listing.component';
 import { CarsComponent } from './cars/cars.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'faq', component: FaqComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'new', component: AddListingComponent },
+  { path: 'my-listings', component: MyListingsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'cars', component: CarsComponent },
   { path: 'cargo-cars', component: TrucksComponent },

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { StartComponent } from './start/start.component';
@@ -23,6 +24,7 @@ import { GokartsComponent } from './gokarts/gokarts.component';
 import { BoatsComponent } from './boats/boats.component';
 import { TrailersComponent } from './trailers/trailers.component';
 import { SparePartsComponent } from './spare-parts/spare-parts.component';
+import { MyListingsComponent } from './my-listings/my-listings.component';
 
 @NgModule({
   declarations: [
@@ -45,12 +47,14 @@ import { SparePartsComponent } from './spare-parts/spare-parts.component';
     GokartsComponent,
     BoatsComponent,
     TrailersComponent,
-    SparePartsComponent
+    SparePartsComponent,
+    MyListingsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
