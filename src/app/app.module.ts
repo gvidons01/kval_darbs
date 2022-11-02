@@ -14,17 +14,10 @@ import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { AddListingComponent } from './add-listing/add-listing.component';
-import { CarsComponent } from './cars/cars.component';
-import { TrucksComponent } from './trucks/trucks.component';
-import { MotorcyclesComponent } from './motorcycles/motorcycles.component';
-import { MopedsComponent } from './mopeds/mopeds.component';
-import { BicyclesComponent } from './bicycles/bicycles.component';
-import { QuadbikesComponent } from './quadbikes/quadbikes.component';
-import { GokartsComponent } from './gokarts/gokarts.component';
-import { BoatsComponent } from './boats/boats.component';
-import { TrailersComponent } from './trailers/trailers.component';
-import { SparePartsComponent } from './spare-parts/spare-parts.component';
 import { MyListingsComponent } from './my-listings/my-listings.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { AdsComponent } from './ads/ads.component';
+import { AdDetailsComponent } from './ad-details/ad-details.component';
 
 @NgModule({
   declarations: [
@@ -38,17 +31,10 @@ import { MyListingsComponent } from './my-listings/my-listings.component';
     ContactComponent,
     LoginComponent,
     AddListingComponent,
-    CarsComponent,
-    TrucksComponent,
-    MotorcyclesComponent,
-    MopedsComponent,
-    BicyclesComponent,
-    QuadbikesComponent,
-    GokartsComponent,
-    BoatsComponent,
-    TrailersComponent,
-    SparePartsComponent,
-    MyListingsComponent
+    MyListingsComponent,
+    CategoriesComponent,
+    AdsComponent,
+    AdDetailsComponent
   ],
   imports: [
     BrowserModule,
