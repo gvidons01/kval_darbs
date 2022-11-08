@@ -8,9 +8,20 @@ import { catchError } from 'rxjs/operators';
 })
 export class AdService {
 
-  url:string = 'http://localhost:8000';
+ private url = 'http://localhost:8000/api';
 
   constructor(private http: HttpClient) { }
+
+  listGroups(){
+    return this.http.get<any>(this.url+`/groups`)
+    .pipe(catchError(
+      (error) => {
+        console.log(error);
+        return throwError('error: something went wrong with retrieving groups!');
+      }));
+  }
+
+  getCategories(){}
 
   listAds(){
     return this.http.get<any>(this.url+`/api/ads`)

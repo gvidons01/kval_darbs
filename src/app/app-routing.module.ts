@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MyListingsComponent } from './my-listings/my-listings.component';
 import { LoginComponent } from './login/login.component';
 import { AddListingComponent } from './add-listing/add-listing.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   { path: 'start', component: StartComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'new', component: AddListingComponent },
   { path: 'my-listings', component: MyListingsComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: '', redirectTo: '/start', pathMatch: 'full' },
   { path: '**', redirectTo: '/start', pathMatch: 'full' }
 ];

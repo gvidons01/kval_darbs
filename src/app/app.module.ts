@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
@@ -18,6 +19,8 @@ import { MyListingsComponent } from './my-listings/my-listings.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { AdsComponent } from './ads/ads.component';
 import { AdDetailsComponent } from './ad-details/ad-details.component';
+import { RegisterComponent } from './register/register.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +37,16 @@ import { AdDetailsComponent } from './ad-details/ad-details.component';
     MyListingsComponent,
     CategoriesComponent,
     AdsComponent,
-    AdDetailsComponent
+    AdDetailsComponent,
+    RegisterComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

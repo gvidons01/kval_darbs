@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AdService } from 'src/app/services/ad.service';
 
 @Component({
   selector: 'app-start',
@@ -7,11 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartComponent implements OnInit {
 
-  title='Sludinājumi';
+  title = 'Sludinājumi';
+  groupData = null;
 
-  constructor() { }
+  constructor(private adService: AdService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.adService.listGroups().subscribe((groups) => {
+      console.log(groups);
+      this.groupData = groups;
+    });
   }
 
 }
