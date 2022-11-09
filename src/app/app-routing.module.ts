@@ -9,9 +9,15 @@ import { MyListingsComponent } from './my-listings/my-listings.component';
 import { LoginComponent } from './login/login.component';
 import { AddListingComponent } from './add-listing/add-listing.component';
 import { RegisterComponent } from './register/register.component';
+import { AdService } from './services/ad.service';
+import { CategoriesComponent } from './categories/categories.component';
 
 const routes: Routes = [
-  { path: 'start', component: StartComponent },
+  { 
+    path: 'start', component: StartComponent,
+    children:[
+      {path: ':id', component: CategoriesComponent}
+    ] },
   { path: 'search', component: SearchComponent },
   { path: 'rules', component: RulesComponent },
   { path: 'faq', component: FaqComponent },

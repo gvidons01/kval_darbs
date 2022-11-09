@@ -21,10 +21,17 @@ export class AdService {
       }));
   }
 
-  getCategories(){}
+  listCategories(){
+    return this.http.get<any>(this.url+`/group/:id`)
+    .pipe(catchError(
+      (error) => {
+        console.log(error);
+        return throwError('error: something went wrong with retrieving categories!');
+      }));
+  }
 
   listAds(){
-    return this.http.get<any>(this.url+`/api/ads`)
+    return this.http.get<any>(this.url+`/ads`)
     .pipe(catchError(
       (error) => {
         console.log(error);

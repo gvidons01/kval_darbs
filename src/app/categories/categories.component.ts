@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AdService } from '../services/ad.service';
+import { Router, ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-categories',
@@ -7,9 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriesComponent implements OnInit {
 
-  constructor() { }
+  groupTitle = null;
+  groupCategories = null;
+
+  constructor(
+    public router: Router, 
+    private adService: AdService,
+    private route: ActivatedRoute,
+    private location: Location
+  ) { }
 
   ngOnInit(): void {
+    this.getGroup();
+    this.adService.listCategories().subscribe((categories) => {
+      console.log(categories);
+    });
+  }
+
+  getGroup(): void {
+    
   }
 
 }
