@@ -24,6 +24,9 @@ export class CategoriesComponent implements OnInit {
     this.getGroup();
     this.adService.listCategories().subscribe((categories) => {
       console.log(categories);
+      if (categories.group_id==1){
+        this.groupCategories=categories;
+      }
     });
   }
 

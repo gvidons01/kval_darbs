@@ -21,6 +21,7 @@ import { AdsComponent } from './ads/ads.component';
 import { AdDetailsComponent } from './ad-details/ad-details.component';
 import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
+import { SearchResultComponent } from './search-result/search-result.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { UserComponent } from './user/user.component';
     AdsComponent,
     AdDetailsComponent,
     RegisterComponent,
-    UserComponent
+    UserComponent,
+    SearchResultComponent
   ],
   imports: [
     BrowserModule,

@@ -19,10 +19,6 @@ export class StartComponent implements OnInit {
       console.log(groups);
       this.groupData = groups;
     });
-
-    this.adService.listCategories().subscribe((categories) => {
-      console.log(categories);
-    });
   }
 
 }

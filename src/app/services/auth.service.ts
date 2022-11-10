@@ -35,5 +35,9 @@ export class AuthService {
     }
   }
 
+  public get isLoggedIn(): boolean {
+    //TODO: Check token expiry and other security checks
+    return (localStorage.getItem('access_token') !== null);
+  }
   
 }
