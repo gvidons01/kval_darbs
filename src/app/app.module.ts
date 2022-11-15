@@ -22,6 +22,7 @@ import { AdDetailsComponent } from './ad-details/ad-details.component';
 import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
 import { SearchResultComponent } from './search-result/search-result.component';
+import { ForgotPwComponent } from './forgot-pw/forgot-pw.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { SearchResultComponent } from './search-result/search-result.component';
     AdDetailsComponent,
     RegisterComponent,
     UserComponent,
-    SearchResultComponent
+    SearchResultComponent,
+    ForgotPwComponent
   ],
   imports: [
     BrowserModule,

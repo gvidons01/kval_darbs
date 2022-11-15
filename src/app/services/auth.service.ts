@@ -13,6 +13,15 @@ export class AuthService {
 
   constructor(private http: HttpClient, public router: Router) { }
 
+  //register a new user
+  /*register(auth: Auth): Observable<Auth>{
+    return this.http.post<User>(this.baseUrl+'/register')
+    .pipe(
+      catchError(this.handleError('register', user))
+    );
+  }*/
+
+  //login into the system
   login(username: string, password: string): Observable<boolean>{
     return this.http.post<{token: string}>(this.baseUrl+'/login', {email: username, password: password})
     .pipe(

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -36,6 +37,27 @@ export class AdService {
       (error) => {
         console.log(error);
         return throwError('Error: shit hit the fan!');
+      }));
+  }
+
+  seeAdDetails(){
+
+  }
+
+  createAd(){
+
+  }
+
+  updateAd(){
+
+  }
+
+  deleteAd(id: number): Observable<unknown>{
+    return this.http.delete(this.url + '/ad/${id}')
+    .pipe(catchError(
+      (error) => {
+        console.log(error);
+        return throwError('Error: failed to delete!');
       }));
   }
 }

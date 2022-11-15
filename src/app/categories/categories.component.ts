@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AdService } from '../services/ad.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
+import { switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-categories',
