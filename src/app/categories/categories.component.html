@@ -1,1 +1,14 @@
-<p>categories works!</p>
+<p>Shit works</p>
+<section *ngIf="groupInfo">
+    <div class="container">
+      <h1 class="h1">{{ groupInfo }}</h1>
+      <div class="container categories row">
+        <div *ngFor="let category of groupCategories" class="col-12 col-sm-6 col-lg-3">
+          <a class="btn w-100" routerLink="/{{category.url}}">
+            <img src="data:image/png;base64, {{category.image}}" alt="no image found" class="w-50">
+            <h5 class="h5">{{category.category_name}}</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>

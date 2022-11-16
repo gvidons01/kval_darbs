@@ -22,8 +22,8 @@ export class AdService {
       }));
   }
 
-  listCategories(){
-    return this.http.get<any>(this.url+`/group/:id`)
+  listCategories(id: number){
+    return this.http.get<any>(this.url+`/group/${id}`)
     .pipe(catchError(
       (error) => {
         console.log(error);
@@ -53,7 +53,7 @@ export class AdService {
   }
 
   deleteAd(id: number): Observable<unknown>{
-    return this.http.delete(this.url + '/ad/${id}')
+    return this.http.delete(this.url + `/ad/${id}`)
     .pipe(catchError(
       (error) => {
         console.log(error);

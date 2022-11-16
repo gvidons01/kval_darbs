@@ -11,7 +11,7 @@ import { switchMap } from 'rxjs/operators';
 })
 export class CategoriesComponent implements OnInit {
 
-  groupTitle = null;
+  groupInfo = null;
   groupCategories = null;
 
   constructor(
@@ -21,18 +21,20 @@ export class CategoriesComponent implements OnInit {
     private location: Location
   ) { }
 
-  ngOnInit(): void {
-    this.getGroup();
-    this.adService.listCategories().subscribe((categories) => {
+  getGroup(){
+    
+  }
+
+  ngOnInit() {
+    groupID = this.getGroup();
+    /*this.adService.listCategories(groupID).subscribe((categories) => {
       console.log(categories);
       if (categories.group_id==1){
         this.groupCategories=categories;
       }
-    });
+    });*/
   }
 
-  getGroup(): void {
-    
-  }
+ 
 
 }

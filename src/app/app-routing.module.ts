@@ -13,11 +13,8 @@ import { AdService } from './services/ad.service';
 import { CategoriesComponent } from './categories/categories.component';
 
 const routes: Routes = [
-  { 
-    path: 'start', component: StartComponent,
-    children:[
-      { path: ':url', component: CategoriesComponent }
-    ] },
+  { path: 'start', component: StartComponent },
+  { path: 'group/:groupurl', component: CategoriesComponent },
   { path: 'search', component: SearchComponent },
   { path: 'rules', component: RulesComponent },
   { path: 'faq', component: FaqComponent },
