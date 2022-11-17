@@ -21,12 +21,7 @@ export class CategoriesComponent implements OnInit {
     private location: Location
   ) { }
 
-  getGroup(){
-    
-  }
-
   ngOnInit() {
-    groupID = this.getGroup();
     /*this.adService.listCategories(groupID).subscribe((categories) => {
       console.log(categories);
       if (categories.group_id==1){
@@ -34,7 +29,4 @@ export class CategoriesComponent implements OnInit {
       }
     });*/
   }
-
- 
-
 }
