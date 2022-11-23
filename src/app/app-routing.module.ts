@@ -14,7 +14,7 @@ import { CategoriesComponent } from './categories/categories.component';
 
 const routes: Routes = [
   { path: 'start', component: StartComponent },
-  { path: 'group/:groupurl', component: CategoriesComponent },
+  { path: 'group/:id', component: CategoriesComponent },
   { path: 'search', component: SearchComponent },
   { path: 'rules', component: RulesComponent },
   { path: 'faq', component: FaqComponent },

@@ -22,11 +22,10 @@ export class CategoriesComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    /*this.adService.listCategories(groupID).subscribe((categories) => {
+    /*this.adService.listCategories().subscribe((categories) => {
       console.log(categories);
-      if (categories.group_id==1){
-        this.groupCategories=categories;
-      }
+      this.groupInfo=categories[0];
+      this.groupCategories=categories[1];
     });*/
   }
 }
