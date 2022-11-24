@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { AdService } from '../services/ad.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
@@ -11,7 +11,6 @@ import { switchMap } from 'rxjs/operators';
 })
 export class CategoriesComponent implements OnInit {
 
-  groupInfo = null;
   groupCategories = null;
 
   constructor(

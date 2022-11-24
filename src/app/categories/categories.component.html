@@ -1,7 +1,7 @@
 <p>Shit works</p>
-<section *ngIf="groupInfo">
+<section>
     <div class="container">
-      <h1 class="h1">{{ groupInfo }}</h1>
+      <h1 class="h1">Grupa</h1>
       <div class="container categories row">
         <div *ngFor="let category of groupCategories" class="col-12 col-sm-6 col-lg-3">
           <a class="btn w-100" routerLink="/{{category.url}}">
