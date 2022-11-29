@@ -1,8 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AdService } from '../services/ad.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-categories',
@@ -21,10 +20,17 @@ export class CategoriesComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.getGroup();
+
     /*this.adService.listCategories().subscribe((categories) => {
       console.log(categories);
       this.groupInfo=categories[0];
       this.groupCategories=categories[1];
     });*/
+  }
+
+  getGroup(): void{
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+
   }
 }

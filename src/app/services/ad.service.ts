@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { Group } from '../group';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,7 @@ export class AdService {
   constructor(private http: HttpClient) { }
 
   listGroups(){
-    return this.http.get<any>(this.url+`/groups`)
+    return this.http.get<Group[]>(this.url+`/groups`)
     .pipe(catchError(
       (error) => {
         console.log(error);
@@ -23,7 +24,7 @@ export class AdService {
   }
 
   listCategories(id: number){
-    return this.http.get<any>(this.url+`/group/${id}`)
+    return this.http.get<Group>(this.url+`/group/${id}`)
     .pipe(catchError(
       (error) => {
         console.log(error);

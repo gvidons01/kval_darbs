@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AdService } from '../services/ad.service';
+import { Group } from '../group';
 
 @Component({
   selector: 'app-search',
@@ -8,7 +9,7 @@ import { AdService } from '../services/ad.service';
 })
 export class SearchComponent implements OnInit {
 
-  groupNames = null;
+  groupNames: Group[] = [];
 
   constructor(private adService: AdService) { }
 

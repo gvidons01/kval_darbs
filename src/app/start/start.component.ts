@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AdService } from 'src/app/services/ad.service';
 import { Router } from '@angular/router';
+import { Group } from '../group';
 
 @Component({
   selector: 'app-start',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 export class StartComponent implements OnInit {
 
   title = 'Sludinājumi';
-  groupData = null;
+  groupData: Group[] = [];
 
   constructor(public router:Router, private adService:AdService) { }
 
