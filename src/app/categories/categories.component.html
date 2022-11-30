@@ -1,10 +1,9 @@
 <section>
-    <div class="container">
-      <h1 class="h1">Grupa</h1>
-      <p>Shit works</p>
+    <div class="container" *ngIf="groupInfo">
+      <h1 class="h1">{{groupInfo['group_name']}}</h1>
       <div class="container categories row">
         <div *ngFor="let category of groupCategories" class="col-12 col-sm-6 col-lg-3">
-          <a class="btn w-100" routerLink="/{{category.url}}">
+          <a class="btn w-100" routerLink="/{{category.ID}}">
             <img src="data:image/png;base64, {{category.image}}" alt="no image found" class="w-50">
             <h5 class="h5">{{category.category_name}}</h5>
           </a>

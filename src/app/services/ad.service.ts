@@ -23,8 +23,8 @@ export class AdService {
       }));
   }
 
-  listCategories(id: number){
-    return this.http.get<Group>(this.url+`/group/${id}`)
+  listCategories(id: number): Observable<any> {
+    return this.http.get<any>(this.url+`/group/${id}`)
     .pipe(catchError(
       (error) => {
         console.log(error);

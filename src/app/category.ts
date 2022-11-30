@@ -1,5 +1,5 @@
 export interface Category {
-    id: number;
+    ID: number;
     category_name: string;
     group_id: number;
     image: Blob;

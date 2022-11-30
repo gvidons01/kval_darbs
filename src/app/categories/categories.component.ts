@@ -10,6 +10,7 @@ import { Location } from '@angular/common';
 })
 export class CategoriesComponent implements OnInit {
 
+  groupInfo = null;
   groupCategories = null;
 
   constructor(
@@ -20,17 +21,13 @@ export class CategoriesComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getGroup();
-
-    /*this.adService.listCategories().subscribe((categories) => {
+    const id = this.route.snapshot.params['id'];
+    console.log(id);
+    this.adService.listCategories(id).subscribe((categories) => {
       console.log(categories);
-      this.groupInfo=categories[0];
-      this.groupCategories=categories[1];
-    });*/
-  }
-
-  getGroup(): void{
-    const id = Number(this.route.snapshot.paramMap.get('id'));
-
+      this.groupInfo = categories[0];
+      console.log(this.groupInfo);
+      this.groupCategories = categories[1];
+    });
   }
 }

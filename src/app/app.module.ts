@@ -23,6 +23,7 @@ import { RegisterComponent } from './register/register.component';
 import { UserComponent } from './user/user.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { ForgotPwComponent } from './forgot-pw/forgot-pw.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ForgotPwComponent } from './forgot-pw/forgot-pw.component';
     RegisterComponent,
     UserComponent,
     SearchResultComponent,
-    ForgotPwComponent
+    ForgotPwComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,

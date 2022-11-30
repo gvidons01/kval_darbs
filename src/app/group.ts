@@ -1,5 +1,5 @@
 export interface Group {
-    id: number;
+    ID: number;
     group_name: string;
     image: Blob;
     url: string;
