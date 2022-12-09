@@ -32,12 +32,21 @@ export class AdService {
       }));
   }
 
-  listAds(){
-    return this.http.get<any>(this.url+`/ads`)
+  listAds(id: number): Observable<any> {
+    return this.http.get<any>(this.url+`/subcat/${id}`)
     .pipe(catchError(
       (error) => {
         console.log(error);
-        return throwError('Error: shit hit the fan!');
+        return throwError('error: failed to retrieve ads!');
+      }));
+  }
+
+  listSubcategories(id: number): Observable<any> {
+    return this.http.get<any>(this.url+`/category/${id}`)
+    .pipe(catchError(
+      (error) => {
+        console.log(error);
+        return throwError('error: something went wrong with retrieving subcategories!');
       }));
   }
 

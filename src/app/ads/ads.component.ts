@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AdService } from 'src/app/services/ad.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-ads',
@@ -8,11 +9,17 @@ import { AdService } from 'src/app/services/ad.service';
 })
 export class AdsComponent implements OnInit {
 
-  constructor(private adService: AdService){}
+  constructor(
+    public router: Router, 
+    private adService: AdService,
+    private route: ActivatedRoute
+    ){ }
 
   ngOnInit() {
-    this.adService.listAds().subscribe((res) => {
-      console.log(res);
+    const id = this.route.snapshot.params['id'];
+    console.log(id);
+    this.adService.listAds(id).subscribe((ads) => {
+      console.log(ads);
     });
   }
 }

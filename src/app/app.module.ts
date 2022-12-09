@@ -24,6 +24,7 @@ import { UserComponent } from './user/user.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { ForgotPwComponent } from './forgot-pw/forgot-pw.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
+import { SubcategoriesComponent } from './subcategories/subcategories.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { EditUserComponent } from './edit-user/edit-user.component';
     UserComponent,
     SearchResultComponent,
     ForgotPwComponent,
-    EditUserComponent
+    EditUserComponent,
+    SubcategoriesComponent
   ],
   imports: [
     BrowserModule,

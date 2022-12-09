@@ -9,13 +9,16 @@ import { MyListingsComponent } from './my-listings/my-listings.component';
 import { LoginComponent } from './login/login.component';
 import { AddListingComponent } from './add-listing/add-listing.component';
 import { RegisterComponent } from './register/register.component';
-import { AdService } from './services/ad.service';
 import { CategoriesComponent } from './categories/categories.component';
+import { SubcategoriesComponent } from './subcategories/subcategories.component';
+import { AdsComponent } from './ads/ads.component';
 import { ForgotPwComponent } from './forgot-pw/forgot-pw.component';
 
 const routes: Routes = [
   { path: 'start', component: StartComponent },
   { path: 'group/:id', component: CategoriesComponent },
+  { path: 'category/:id', component: SubcategoriesComponent },
+  { path: 'subcat/:id', component: AdsComponent },
   { path: 'search', component: SearchComponent },
   { path: 'rules', component: RulesComponent },
   { path: 'faq', component: FaqComponent },

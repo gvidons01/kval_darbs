@@ -1,0 +1,12 @@
+<section>
+    <div class="container" *ngIf="category">
+        <h1 class="h1">{{category['category_name']}}</h1>
+        <ul class="container" *ngIf="subcategories">
+            <li *ngFor="let subcategory of subcategories" class="col-12">
+                <a class="btn w-100" routerLink="/subcat/{{subcategory.ID}}">
+                    <h5 class="h5">{{subcategory['sub-category']}}</h5>
+                </a>
+            </li>
+        </ul>
+    </div>
+  </section>
