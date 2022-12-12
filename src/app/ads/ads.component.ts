@@ -9,6 +9,9 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class AdsComponent implements OnInit {
 
+  subcat = null;
+  adsList = null;
+
   constructor(
     public router: Router, 
     private adService: AdService,
@@ -20,6 +23,8 @@ export class AdsComponent implements OnInit {
     console.log(id);
     this.adService.listAds(id).subscribe((ads) => {
       console.log(ads);
+      this.subcat = ads[0];
+      this.adsList = ads[1];
     });
   }
 }

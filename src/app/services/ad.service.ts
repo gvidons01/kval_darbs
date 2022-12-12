@@ -50,8 +50,13 @@ export class AdService {
       }));
   }
 
-  seeAdDetails(){
-
+  seeAdDetails(id: number): Observable<any>{
+    return this.http.get<any>(this.url+`/ad/${id}`)
+    .pipe(catchError(
+      (error) => {
+        console.log(error);
+        return throwError('error: something went wrong with retrieving ad details!');
+      }));
   }
 
   createAd(){

@@ -12,6 +12,7 @@ import { RegisterComponent } from './register/register.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { SubcategoriesComponent } from './subcategories/subcategories.component';
 import { AdsComponent } from './ads/ads.component';
+import { AdDetailsComponent } from './ad-details/ad-details.component';
 import { ForgotPwComponent } from './forgot-pw/forgot-pw.component';
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'group/:id', component: CategoriesComponent },
   { path: 'category/:id', component: SubcategoriesComponent },
   { path: 'subcat/:id', component: AdsComponent },
+  { path: 'ad/:id', component: AdDetailsComponent },
   { path: 'search', component: SearchComponent },
   { path: 'rules', component: RulesComponent },
   { path: 'faq', component: FaqComponent },

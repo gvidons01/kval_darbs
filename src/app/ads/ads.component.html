@@ -1,1 +1,23 @@
-<p>ads works!</p>
+<section>
+    <div class="container" *ngIf="subcat">
+      <h1 class="h1">{{ subcat['sub-category'] }}</h1>
+      <div class="container ads row">
+        <table>
+            <thead>
+                <tr class="col-12">
+                    <th>Apraksts</th>
+                    <th>Darījuma veids</th>
+                    <th>cena</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let ad of adsList">
+                     <td><a routerLink="/ad/{{ad.ID}}">{{ ad.description }}</a></td>
+                    <td>{{ ad.tr_type }}</td>
+                    <td>{{ ad.price }}</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </section>

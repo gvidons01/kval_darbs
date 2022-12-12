@@ -1,1 +1,21 @@
-<p>ad-details works!</p>
+<section>
+    <div class="container" *ngIf="ad">
+        <h1 class="h1">Sludinājums nr. {{ ad['ID'] }}</h1>
+        <div class="ad-details">
+            <div class="images">
+                <img *ngFor="let image of images" src="data:image/png;base64, {{image.image}}" class="col-12 col-sm-6 col-lg-3">
+            </div>
+            <div class="details container">
+                <h5>Darījuma veids: {{ ad['tr_type'] }}</h5>
+                <h5>Cena: {{ ad['price'] }} Eiro</h5>
+                <p>{{ ad['description'] }}</p>
+            </div>
+            <div class="user-info container" *ngIf="userInfo">
+                <h3>Kontaktinformācija:</h3>
+                <h5><strong>Vārds, uzvārds:</strong> {{ userInfo['fname'] }} {{ userInfo['lname'] }}</h5>
+                <h5><strong>E-pasts:</strong> {{ userInfo['email'] }}</h5>
+                <h5><strong>Tālrunis:</strong> {{ userInfo['phone_no'] }}</h5>
+            </div>
+        </div>
+    </div>
+</section>
