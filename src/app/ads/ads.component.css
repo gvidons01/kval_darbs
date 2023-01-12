@@ -11,3 +11,12 @@ td, th {
     border-radius: 10px;
     background-color: rgb(0, 200, 0);
 }
+
+.ad_description {
+    font-size: 16px;
+    color: black;
+}
+
+.ad_description:hover {
+    color: gray;
+}
